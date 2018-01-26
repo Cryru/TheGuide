@@ -1,0 +1,1577 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Guide.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Guide.ico"
+IDR_GuideTYPE           ICON                    "res\\GuideDoc.ico"
+IDI_TRAYICON            ICON                    "res\\trayicon.ico"
+IDI_JFY_LEFT            ICON                    "res\\jfyleft.ico"
+IDI_JFY_CENTER          ICON                    "res\\jfycenter.ico"
+IDI_JFY_RIGHT           ICON                    "res\\jfyright.ico"
+IDI_FMT_BOLD            ICON                    "res\\fmtbold.ico"
+IDI_FMT_ITALIC          ICON                    "res\\fmtital.ico"
+IDI_FMT_UNDERLINE       ICON                    "res\\fmtul.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_FORMAT_BAR          BITMAP                  "res\\format_toolbar.bmp"
+IDB_BOOK                BITMAP                  "res\\book.bmp"
+IDB_PAGE                BITMAP                  "res\\page.bmp"
+IDB_ICONS               BITMAP                  "res\\icons.bmp"
+IDB_STATE_ICONS         BITMAP                  "res\\state_icons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_FORMAT_BAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FORMAT_BOLD
+    BUTTON      ID_FORMAT_ITALIC
+    BUTTON      ID_FORMAT_UNDERLINE
+    BUTTON      ID_FORMAT_STRIKETHROUGH
+    BUTTON      ID_FORMAT_LEFTJUSTIFIED
+    BUTTON      ID_FORMAT_CENTERJUSTIFIED
+    BUTTON      ID_FORMAT_RIGHTJUSTIFIED
+    BUTTON      ID_FORMAT_LINESPACING
+    BUTTON      ID_FORMAT_NUMBERED
+    BUTTON      ID_FORMAT_BULLETED
+    BUTTON      ID_FORMAT_DECINDENT
+    BUTTON      ID_FORMAT_INCINDENT
+    SEPARATOR
+    BUTTON      ID_FORMAT_BACKGROUNDCOLOUR
+    BUTTON      ID_FORMAT_FOREGROUNDCOLOUR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Export...",                  ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+        MENUITEM "-- Recent Files --",          ID_FILE_RECENTFILES
+        , INACTIVE, MENUBARBREAK
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "P&aste As Text\tCtrl+Shift+V", ID_EDIT_PASTEASTEXT
+        MENUITEM "Paste &Special...",           ID_EDIT_PASTE_SPECIAL
+        MENUITEM "Select A&ll\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "F&ind Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Replace\tCtrl+H",             ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &Date\tCtrl+D",        ID_EDIT_INSERTDATE
+        MENUITEM "Insert Ti&me\tCtrl+T",        ID_EDIT_INSERTTIME
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "&Object Properties\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "&Tree"
+    BEGIN
+        MENUITEM "&Add Top-level Page\tCtrl+Enter", ID_TREE_ADDTOP
+        MENUITEM "Add &Child Page\tEnter",      ID_TREE_ADDCHILDPAGE
+        MENUITEM "Add Page Abo&ve\tIns",        ID_TREE_ADDPAGEABOVE
+        MENUITEM "Add Page &Below\tShift+Ins",  ID_TREE_ADDPAGEBELOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename Page\tSpace",         ID_TREE_RENAMEPAGE
+        MENUITEM "&Delete Page\tDel",           ID_TREE_DELETEPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Shift Page &Up\tShift+Up",    ID_TREE_MOVEUP
+        MENUITEM "Shift Page D&own\tShift+Down", ID_TREE_MOVEDOWN
+        MENUITEM SEPARATOR
+        MENUITEM "&Expand All",                 ID_TREE_EXPANDALL
+        MENUITEM "Co&llapse All",               ID_TREE_COLLAPSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Search...\tCtrl+Shift+F",    ID_TREE_SEARCH
+        MENUITEM "Node Te&xt Color...",         ID_TREE_COLOR
+        MENUITEM "Node Bac&kground Color...",   32966
+        MENUITEM "&Icon...",                    32967
+    END
+    POPUP "Te&xt"
+    BEGIN
+        MENUITEM "&Bold\tCtrl+B",               ID_FORMAT_BOLD
+        MENUITEM "&Italics\tCtrl+I",            ID_FORMAT_ITALIC
+        MENUITEM "&Underline\tCtrl+U",          ID_FORMAT_UNDERLINE
+        MENUITEM "&Strikethrough\tCtrl+K",      ID_FORMAT_STRIKETHROUGH
+        MENUITEM "&Font...",                    ID_FORMAT_FONT
+        MENUITEM SEPARATOR
+        MENUITEM "&Hyperlink...\tCtrl+Shift+H", ID_FORMAT_HYPERLINK
+        MENUITEM SEPARATOR
+        MENUITEM "&Numbered",                   32777
+        MENUITEM "Bu&lleted",                   32781
+        MENUITEM SEPARATOR
+        MENUITEM "&Decrease Indent\tCtrl+Shift+M", ID_FORMAT_DECINDENT
+        MENUITEM "In&crease Indent\tCtrl+M",    ID_FORMAT_INCINDENT
+        MENUITEM SEPARATOR
+        MENUITEM "B&ackground Color...",        ID_FORMAT_BACKGROUNDCOLOUR
+        MENUITEM "F&oreground Color...",        32780
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Format Bar",                 ID_VIEW_FORMATBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Preferences...\tCtrl+,",     ID_VIEW_PREFERENCES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Keyboard Shortcuts...",      ID_HELP_KEYBOARDSHORTCUTS
+        MENUITEM SEPARATOR
+        MENUITEM "&About The Guide...",         ID_APP_ABOUT
+    END
+END
+
+IDR_CNTR_INPLACE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+IDR_TREE_MENU MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Add &Top-level Page\tCtrl+Enter", ID_RMB_ADDTOP
+        MENUITEM "Add &Child Page\tEnter",      ID_RMB_ADDCHILD
+        MENUITEM "Add Page &Above\tIns",        ID_RMB_ADDPAGEABOVE
+        MENUITEM "Add Page &Below\tShift+Ins",  ID_RMB_ADDPAGEBELOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename Page\tSpace",         ID_RMB_RENAME
+        MENUITEM "&Delete Page\tDel",           ID_RMB_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Shift Page &Up\tShift+Up",    ID_RMB_MOVEUP
+        MENUITEM "Shift Page D&own\tShift+Down", ID_RMB_MOVEDOWN
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_RMB_PRINT
+        MENUITEM "Print Pre&view",              ID_RMB_PRINTPREVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Search...\tCtrl+Shift+F",    ID_RMB_SEARCH
+        MENUITEM "Te&xt Color...",              ID_RMB_COLOR
+        MENUITEM "Bac&kground Color...",        ID_RMB_BGCOLOR
+        MENUITEM "Icon...",                     ID_RMB_NODEICON
+    END
+END
+
+IDR_TRAYMENU MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Restore",                    ID_TRAY_RESTORE
+        MENUITEM "E&xit",                       ID_TRAY_EXIT
+    END
+END
+
+IDR_NUMBER_MENU MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "1, 2, 3, ...",                ID_FMTNUM_ARABIC
+        MENUITEM "i, ii, iii, ...",             ID_FMTNUM_LOWER_ROMAN
+        MENUITEM "I, II, III, ...",             ID_FMTNUM_UPPER_ROMAN
+        MENUITEM SEPARATOR
+        MENUITEM "a, b, c, ...",                ID_FMTNUM_LOWER_ALPHA
+        MENUITEM "A, B, C, ...",                ID_FMTNUM_UPPER_ALPHA
+    END
+END
+
+IDR_LINESPACING MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "1 line\tCtrl+1",              ID_FORMAT_LINESPC_ONE
+        MENUITEM "1½ lines\tCtrl+5",            ID_FORMAT_LINESPC_ONEHALF
+        MENUITEM "2 lines\tCtrl+2",             ID_FORMAT_LINESPC_TWO
+    END
+END
+
+IDR_RMB MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Bold\tCtrl+B",                ID_FORMAT_BOLD
+        MENUITEM "Italics\tCtrl+I",             ID_FORMAT_ITALIC
+        MENUITEM "Underline\tCtrl+U",           ID_FORMAT_UNDERLINE
+        MENUITEM "Strikethrough\tCtrl+K",       ID_FORMAT_STRIKETHROUGH
+        MENUITEM "&Font...",                    ID_FORMAT_FONT
+        MENUITEM SEPARATOR
+        MENUITEM "&Hyperlink...\tCtrl+Shift+H", ID_FORMAT_HYPERLINK
+        MENUITEM SEPARATOR
+        MENUITEM "&Numbered",                   ID_FORMAT_NUMBERED
+        MENUITEM "&Bulleted",                   ID_FORMAT_BULLETED
+    END
+END
+
+IDR_DROP_MENU MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Copy",                       ID_DROP_COPY
+        MENUITEM "&Move",                       ID_DROP_MOVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_FORMAT_BOLD,         VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EDIT_INSERTDATE,     VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_TREE_SEARCH,         VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_FORMAT_HYPERLINK,    VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "I",            ID_FORMAT_ITALIC,       VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_FORMAT_STRIKETHROUGH, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_FORMAT_LEFTJUSTIFIED, VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_FORMAT_INCINDENT,    VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_FORMAT_DECINDENT,    VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINTSUBTREE,   VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "R",            ID_FORMAT_RIGHTJUSTIFIED, VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_EDIT_INSERTTIME,     VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_FORMAT_UNDERLINE,    VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F2,          ID_TREE_RENAMEPAGE,     VIRTKEY, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_OEM_COMMA,   ID_VIEW_PREFERENCES,    VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY, ALT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTEASTEXT,    VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+END
+
+IDR_CNTR_INPLACE ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_FORMAT_BOLD,         VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_FORMAT_ITALIC,       VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_FORMAT_LEFTJUSTIFIED, VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_FORMAT_RIGHTJUSTIFIED, VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_FORMAT_UNDERLINE,    VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+IDR_TREE_ACCEL ACCELERATORS 
+BEGIN
+    VK_RETURN,      ID_TREE_ADDCHILDPAGE,   VIRTKEY, NOINVERT
+    VK_RETURN,      ID_TREE_ADDTOP,         VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_TREE_DELETESELECTED, VIRTKEY, NOINVERT
+    VK_ESCAPE,      ID_TREE_ESCKEY,         VIRTKEY, NOINVERT
+    VK_INSERT,      ID_TREE_INSERT,         VIRTKEY, NOINVERT
+    VK_INSERT,      ID_TREE_INSERTAFTER,    VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        ID_TREE_MOVEDOWN,       VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          ID_TREE_MOVEUP,         VIRTKEY, SHIFT, NOINVERT
+    VK_SPACE,       ID_TREE_RENAMEPAGE,     VIRTKEY, NOINVERT
+    VK_TAB,         ID_TREE_SHIFTFOCUS,     VIRTKEY, NOINVERT
+    VK_TAB,         ID_TREE_SHIFTFOCUS,     VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 300, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About The Guide"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Copyright © 2005-08 Mahadevan R. All Rights Reserved.",
+                    IDC_STATIC,55,35,185,8
+    DEFPUSHBUTTON   "OK",IDOK,243,162,50,16,WS_GROUP
+    CONTROL         "http://theguide.sourceforge.net/",IDC_ABT_URL,"Static",
+                    SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,55,43,151,8
+    LTEXT           "Version 2.0",IDC_STATIC,55,19,200,8,SS_NOPREFIX
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,54,63,239,1
+    CONTROL         "",IDC_ABT_HEADING,"Static",SS_OWNERDRAW,7,7,40,171
+    LTEXT           "The Guide",IDC_STATIC,55,10,104,8,SS_NOPREFIX
+    LTEXT           "Feedback welcome:",IDC_STATIC,55,74,64,8
+    CONTROL         "mailto:mdevan@users.sourceforge.net",IDC_ABT_EMAIL,
+                    "Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,55,82,
+                    129,11
+    LTEXT           "This software includes or uses:",IDC_STATIC,55,134,100,
+                    8
+    CONTROL         "Silk Icon Set: http://www.famfamfam.com/lab/icons/silk/",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | 
+                    WS_GROUP,55,144,196,8
+    LTEXT           "Distributed under ""The Apache License 2.0"" open source license.",
+                    IDC_STATIC,55,119,207,8
+    CONTROL         "Argtable: http://argtable.sourceforge.net/",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,55,152,
+                    196,8
+    LTEXT           "The Guide Users Group:",IDC_STATIC,55,94,77,8
+    CONTROL         "http://groups.google.com/group/the-guide-users-group",
+                    IDC_ABT_GUG,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | 
+                    WS_GROUP,55,102,180,11
+END
+
+IDD_HELP_KEYBOARD DIALOGEX 0, 0, 398, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Keyboard Shortcuts"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Dismiss",IDOK,173,253,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,19,384,108
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,148,384,98
+    LTEXT           "Tree Editing (left pane):",IDC_STATIC,7,9,100,10
+    LTEXT           "Text Editing (right pane):",IDC_STATIC,7,138,98,10
+END
+
+IDD_PREF_FONTS DIALOGEX 0, 0, 286, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Fonts"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "&System default",IDC_RADIO_TREE_FONT_SYSDEFAULT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,22,130,10
+    CONTROL         "Times New Roman, 8pt, ...",IDC_RADIO_TREE_FONT_USER,
+                    "Button",BS_AUTORADIOBUTTON,22,40,146,10
+    PUSHBUTTON      "&Choose..",IDC_TREE_FONT_CHOOSE,177,38,50,14
+    CONTROL         "S&ystem default",IDC_RADIO_TEXT_FONT_SYSDEFAULT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,81,136,10
+    CONTROL         "Times New Roman",IDC_RADIO_TEXT_FONT_USER,"Button",
+                    BS_AUTORADIOBUTTON,22,99,146,10
+    PUSHBUTTON      "C&hoose..",IDC_TEXT_FONT_CHOOSE,177,98,50,14
+    LTEXT           "Font for tree (left pane):",IDC_STATIC,7,7,199,8
+    LTEXT           "(Initial) font for the text (right pane):",IDC_STATIC,7,
+                    66,175,8
+END
+
+IDD_PREF_COLORS DIALOGEX 0, 0, 286, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Colors"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "&System default",IDC_RADIO_TREE_COLOR_SYSDEFAULT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,22,109,10
+    CONTROL         "&Like this:",IDC_RADIO_TREE_COLOR_USER,"Button",
+                    BS_AUTORADIOBUTTON,22,40,44,10
+    PUSHBUTTON      "&Foreground..",IDC_TREE_FORE,125,37,50,14
+    PUSHBUTTON      "&Background..",IDC_TREE_BACK,177,37,50,14
+    CONTROL         "S&ystem default",IDC_RADIO_TEXT_COLOR_SYSDEFAULT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,81,98,10
+    CONTROL         "L&ike this:",IDC_RADIO_TEXT_COLOR_USER,"Button",
+                    BS_AUTORADIOBUTTON,22,99,44,10
+    PUSHBUTTON      "F&oreground..",IDC_TEXT_FORE,125,98,50,14
+    PUSHBUTTON      "B&ackground..",IDC_TEXT_BACK,177,98,50,14
+    LTEXT           "Colors for tree (left pane):",IDC_STATIC,7,7,156,8
+    CTEXT           "Static",IDC_TREE_COLOR_SAMPLE,67,39,38,11,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "(Initial) colors for text (right pane):",IDC_STATIC,7,
+                    66,211,8
+    CTEXT           "Static",IDC_TEXT_COLOR_SAMPLE,67,99,38,11,
+                    SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_PREF_STARTUP DIALOGEX 0, 0, 286, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "&Show empty environment",IDC_RADIO_SHOW_EMPTY,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,22,97,10
+    CONTROL         "&Load last used document",IDC_RADIO_LOAD_LAST,"Button",
+                    BS_AUTORADIOBUTTON,22,40,95,10
+    CONTROL         "&Minimize to system tray",IDC_CHECK_SYSTRAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,95,91,10
+    CONTROL         "S&ingle-click restore",IDC_CHECK_SINGLECLICK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,34,113,75,10
+    CONTROL         """&Esc"" key minimizes",IDC_CHECK_ESC_MIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,131,77,10
+    CONTROL         """&X"" button minimizes",IDC_CHECK_X_MIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,149,80,10
+    CONTROL         "&Auto save every",IDC_CHECK_AUTOSAVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,157,22,69,10
+    EDITTEXT        IDC_AUTOSAVE_MINUTES,227,20,15,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "A&uto save on close",IDC_CHECK_SAVE_ON_CLOSE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,157,40,77,10
+    CONTROL         "Create &backups",IDC_CHECK_BACKUP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,157,86,66,10
+    LTEXT           "At startup:",IDC_STATIC,7,7,36,8
+    LTEXT           "Minimize options:",IDC_STATIC,7,77,55,8
+    LTEXT           "Save options:",IDC_STATIC,141,7,45,8
+    LTEXT           "minute(s)",IDC_STATIC,245,22,31,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,129,14,1,149
+    LTEXT           "Backup options:",IDC_STATIC,141,68,52,8
+    CONTROL         "I&cons",IDC_CHECK_ICONS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,157,131,33,10
+    CONTROL         "&C&heckboxes",IDC_CHECK_CBOXES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,157,149,55,10
+    LTEXT           "Tree decoration: (needs restart)",IDC_STATIC,141,115,
+                    105,8
+END
+
+IDD_SEARCH_DIALOG DIALOGEX 0, 0, 324, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Search"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SWHAT,49,9,193,14,ES_AUTOHSCROLL
+    CONTROL         "Match &case",IDC_SMATCHCASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,30,52,10
+    CONTROL         "Only in &titles",IDC_SONLYTITLES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,30,55,10
+    CONTROL         "Only within &subtree",IDC_SONLYSUBTREE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,30,78,10
+    DEFPUSHBUTTON   "&Find",IDC_SFIND,263,9,50,14
+    CONTROL         "",IDC_SRESULT,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,64,302,91
+    PUSHBUTTON      "C&lose",IDC_SCLOSE,263,29,50,14
+    LTEXT           "Find what:",IDC_STATIC,11,11,35,8
+    LTEXT           "Results (double-click to locate):",IDC_STATIC,11,53,101,
+                    8
+END
+
+IDD_PREF_PRINT DIALOGEX 0, 0, 286, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Print"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Heading Styles:",IDC_STATIC,7,7,51,8
+    LISTBOX         IDC_HDGLIST,7,18,175,153,LBS_SORT | 
+                    LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Prefix heading number",IDC_PFXNUM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,191,18,88,10
+    CONTROL         "Begin on a new page",IDC_BEGINONNEW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,191,35,83,10
+    PUSHBUTTON      "&Reset All",IDC_RESETALL,191,157,50,14
+    PUSHBUTTON      "Color..",IDC_HCOLOR,191,128,38,14
+    CONTROL         "Left",IDC_JUSLEFT,"Button",BS_AUTORADIOBUTTON | BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_PUSHLIKE,191,106,15,13
+    CONTROL         "Center",IDC_JUSCENTER,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,208,106,
+                    15,13
+    CONTROL         "Right",IDC_JUSRIGHT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,225,106,
+                    15,13
+    LTEXT           "Justify:",IDC_STATIC,191,97,25,8
+    COMBOBOX        IDC_PFONTNAMES,191,58,88,117,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PFONTSIZES,191,76,28,101,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Bold",IDC_PFMTBOLD,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_PUSHLIKE,231,76,15,13
+    CONTROL         "Italic",IDC_PFMTITALIC,"Button",BS_AUTOCHECKBOX | 
+                    BS_ICON | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,247,76,15,
+                    13
+    CONTROL         "Underline",IDC_PFMTUNDERLINE,"Button",BS_AUTOCHECKBOX | 
+                    BS_ICON | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,264,76,15,
+                    13
+    LTEXT           "Font:",IDC_STATIC,191,50,18,8
+END
+
+IDD_PRINT_PREVIEW_BAR DIALOGEX 0, 0, 513, 16
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Pre&v Page",AFX_ID_PREVIEW_PREV,2,2,44,12
+    PUSHBUTTON      "&Next Page",AFX_ID_PREVIEW_NEXT,48,2,44,12
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,105,2,44,12
+    PUSHBUTTON      "Zoom &In",AFX_ID_PREVIEW_ZOOMIN,162,2,44,12
+    PUSHBUTTON      "Zoom &Out",AFX_ID_PREVIEW_ZOOMOUT,208,2,44,12
+    PUSHBUTTON      "&Print...",AFX_ID_PREVIEW_PRINT,266,2,44,12
+    COMBOBOX        IDC_PRINT_PREVIEW_WHAT,316,1,103,78,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Close",AFX_ID_PREVIEW_CLOSE,431,2,44,12
+END
+
+1538 DIALOGEX 32, 32, 288, 231
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CONTEXTHELP | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Print"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Printer",1075,8,4,272,84,WS_GROUP
+    LTEXT           "&Name:",1093,16,20,36,8
+    COMBOBOX        1139,52,18,152,152,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "&Properties...",1025,212,17,60,14,WS_GROUP
+    LTEXT           "Status:",1095,16,36,36,10,SS_NOPREFIX
+    CONTROL         "",1099,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | 
+                    WS_GROUP,52,36,224,10
+    LTEXT           "Type:",1094,16,48,36,10,SS_NOPREFIX
+    CONTROL         "",1098,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | 
+                    WS_GROUP,52,48,224,10
+    LTEXT           "Where:",1097,16,60,36,10,SS_NOPREFIX
+    CONTROL         "",1101,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | 
+                    WS_GROUP,52,60,224,10
+    LTEXT           "Comment:",1096,16,72,36,10,SS_NOPREFIX
+    CONTROL         "",1100,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | 
+                    WS_GROUP,52,72,156,10
+    CONTROL         "Print to fi&le",1040,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,212,72,64,12
+    GROUPBOX        "Print range",1072,8,92,144,64,WS_GROUP
+    RADIOBUTTON     "&All",1056,16,106,64,12,WS_GROUP
+    RADIOBUTTON     "Pa&ges",1058,16,122,36,12
+    RADIOBUTTON     "&Selection",1057,16,138,64,12
+    RTEXT           "&from:",1089,52,124,20,8
+    EDITTEXT        1152,74,122,26,12,ES_NUMBER | WS_GROUP
+    RTEXT           "&to:",1090,102,124,16,8
+    EDITTEXT        1153,120,122,26,12,ES_NUMBER | WS_GROUP
+    GROUPBOX        "Copies",1073,160,92,120,64,WS_GROUP
+    LTEXT           "Number of &copies:",1092,168,108,68,8
+    EDITTEXT        1154,240,106,32,12,ES_NUMBER | WS_GROUP
+    ICON            "",1086,162,124,76,28,SS_CENTERIMAGE | WS_GROUP
+    CONTROL         "C&ollate",1041,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,240,130,36,12
+    DEFPUSHBUTTON   "OK",IDOK,180,210,48,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,232,210,48,14
+    PUSHBUTTON      "&Help",1038,231,189,48,14,NOT WS_VISIBLE
+    GROUPBOX        "Print what",1074,8,160,144,64,WS_GROUP
+    CONTROL         "&Entire document",IDC_PRINTDLG_ENTIRE_DOCUMENT,"Button",
+                    BS_AUTORADIOBUTTON,15,174,90,12
+    CONTROL         "Only selected &item",IDC_PRINTDLG_ONLY_SELECTED,"Button",
+                    BS_AUTORADIOBUTTON,15,190,116,12
+    CONTROL         "Selected item and chil&dren",
+                    IDC_PRINTDLG_SELANDCHILDREN,"Button",BS_AUTORADIOBUTTON,
+                    15,206,103,12
+END
+
+IDD_CUSTOM_EXPORT DIALOGEX 0, 0, 300, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Export &what:",1092,67,2,58,8
+    COMBOBOX        IDC_EXPORT_WHAT,130,0,164,78,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FGCOLOR DIALOGEX 0, 0, 100, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Automatic",IDC_FGCOLOR_AUTO,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,2,2,96,16
+    CONTROL         "More Colors...",IDC_FGCOLOR_MORE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,2,77,96,16
+    CONTROL         "ButtonText",IDC_FGCOL1,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,2,20,12,11
+    CONTROL         "ButtonText",IDC_FGCOL2,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,14,20,12,11
+    CONTROL         "ButtonText",IDC_FGCOL3,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,26,20,12,11
+    CONTROL         "ButtonText",IDC_FGCOL4,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,38,20,12,11
+    CONTROL         "ButtonText",IDC_FGCOL5,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,50,20,12,11
+    CONTROL         "ButtonText",IDC_FGCOL6,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,62,20,12,11
+    CONTROL         "ButtonText",IDC_FGCOL7,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,74,20,12,11
+    CONTROL         "ButtonText",IDC_FGCOL8,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,86,20,12,11
+    CONTROL         "ButtonText",IDC_FGCOL9,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,2,31,12,11
+    CONTROL         "ButtonText",IDC_FGCOL10,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,14,31,12,11
+    CONTROL         "ButtonText",IDC_FGCOL11,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,26,31,12,11
+    CONTROL         "ButtonText",IDC_FGCOL12,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,38,31,12,11
+    CONTROL         "ButtonText",IDC_FGCOL13,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,50,31,12,11
+    CONTROL         "ButtonText",IDC_FGCOL14,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,62,31,12,11
+    CONTROL         "ButtonText",IDC_FGCOL15,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,74,31,12,11
+    CONTROL         "ButtonText",IDC_FGCOL16,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,86,31,12,11
+    CONTROL         "ButtonText",IDC_FGCOL17,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,2,42,12,11
+    CONTROL         "ButtonText",IDC_FGCOL18,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,14,42,12,11
+    CONTROL         "ButtonText",IDC_FGCOL19,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,26,42,12,11
+    CONTROL         "ButtonText",IDC_FGCOL20,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,38,42,12,11
+    CONTROL         "ButtonText",IDC_FGCOL21,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,50,42,12,11
+    CONTROL         "ButtonText",IDC_FGCOL22,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,62,42,12,11
+    CONTROL         "ButtonText",IDC_FGCOL23,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,74,42,12,11
+    CONTROL         "ButtonText",IDC_FGCOL24,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,86,42,12,11
+    CONTROL         "ButtonText",IDC_FGCOL25,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,2,53,12,11
+    CONTROL         "ButtonText",IDC_FGCOL26,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,14,53,12,11
+    CONTROL         "ButtonText",IDC_FGCOL27,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,26,53,12,11
+    CONTROL         "ButtonText",IDC_FGCOL28,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,38,53,12,11
+    CONTROL         "ButtonText",IDC_FGCOL29,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,50,53,12,11
+    CONTROL         "ButtonText",IDC_FGCOL30,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,62,53,12,11
+    CONTROL         "ButtonText",IDC_FGCOL31,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,74,53,12,11
+    CONTROL         "ButtonText",IDC_FGCOL32,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,86,53,12,11
+    CONTROL         "ButtonText",IDC_FGCOL33,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,2,64,12,11
+    CONTROL         "ButtonText",IDC_FGCOL34,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,14,64,12,11
+    CONTROL         "ButtonText",IDC_FGCOL35,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,26,64,12,11
+    CONTROL         "ButtonText",IDC_FGCOL36,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,38,64,12,11
+    CONTROL         "ButtonText",IDC_FGCOL37,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,50,64,12,11
+    CONTROL         "ButtonText",IDC_FGCOL38,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,62,64,12,11
+    CONTROL         "ButtonText",IDC_FGCOL39,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,74,64,12,11
+    CONTROL         "ButtonText",IDC_FGCOL40,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,86,64,12,11
+END
+
+IDD_PREF_DATEFMT DIALOGEX 0, 0, 286, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Date/Time"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "&System default (""xx"")",IDC_RADIO_DATEFMT_SYSTEM,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,22,22,149,10
+    CONTROL         "&Custom (""xx"")",IDC_RADIO_DATEFMT_CUSTOM,"Button",
+                    BS_AUTORADIOBUTTON,22,40,150,10
+    PUSHBUTTON      "C&hoose..",IDC_SET_DATEFMT,177,38,50,14
+    CONTROL         "S&ystem default (""xx"")",IDC_RADIO_TIMEFMT_SYSTEM,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,22,81,151,10
+    CONTROL         "C&ustom (""xx"")",IDC_RADIO_TIMEFMT_CUSTOM,"Button",
+                    BS_AUTORADIOBUTTON,22,99,148,10
+    PUSHBUTTON      "Ch&oose..",IDC_SET_TIMEFMT,177,98,50,14
+    LTEXT           "Time format:",IDC_STATIC,7,66,42,8
+    LTEXT           "Date format:",IDC_STATIC,7,7,42,8
+END
+
+IDD_DATEFMT DIALOGEX 0, 0, 198, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Custom Date Format"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITFMT,41,14,116,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,69,181,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,132,181,50,14
+    LTEXT           "Format:",IDC_STATIC,10,16,26,8
+    EDITTEXT        IDC_EDITSAMPLE,41,34,116,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sample:",IDC_STATIC,10,35,26,8
+    LTEXT           "d\tday\ndd\tday, with leading zero\nddd\tweekname, as three-letter abbreviation\ndddd\tweekname, full\nM\tmonth\nMM\tmonth, with leading zero\nMMM\tmonthname, as three-letter abbreviation\nMMMM\tmonthname, full\nyy\tyear, two digits\nyyyy\tyear, full\ngg\tperiod/era",
+                    IDC_STATIC,19,76,159,89
+    LTEXT           "Codes that can be used in the format string:",
+                    IDC_STATIC,10,61,143,8
+END
+
+IDD_TIMEFMT DIALOGEX 0, 0, 198, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Custom Time Format"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITFMT,41,14,116,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,69,181,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,132,181,50,14
+    LTEXT           "Format:",IDC_STATIC,10,16,26,8
+    EDITTEXT        IDC_EDITSAMPLE,41,34,116,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sample:",IDC_STATIC,10,35,26,8
+    LTEXT           "h\thours, 12-hour clock\nhh\thours, leading zero, 12-hour clock\nH\thours, 24-hour clock\nHH\thours, leading zero, 24-hour clock\nm\tminutes\nmm\tminutes, leading zero\ns\tseconds\nss\tseconds, leading zero\ntt\ttime-marker (AM or PM)",
+                    IDC_STATIC,19,76,159,89
+    LTEXT           "Codes that can be used in the format string:",
+                    IDC_STATIC,10,61,143,8
+END
+
+IDD_PREF_FONTANDCOL DIALOGEX 0, 0, 286, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Fonts/Colors"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PFONTNAMES,16,36,88,117,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PFONTSIZES,16,50,28,101,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Bold",IDC_PFMTBOLD,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_PUSHLIKE,54,50,15,13
+    CONTROL         "Italic",IDC_PFMTITALIC,"Button",BS_AUTOCHECKBOX | 
+                    BS_ICON | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,71,50,15,
+                    13
+    CONTROL         "Underline",IDC_PFMTUNDERLINE,"Button",BS_AUTOCHECKBOX | 
+                    BS_ICON | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,88,50,15,
+                    13
+    LTEXT           "Tree pane (left pane):",IDC_STATIC,7,7,72,8
+    PUSHBUTTON      "BG",IDC_BUTTON1,34,90,15,13
+    PUSHBUTTON      "FG",IDC_BUTTON2,17,90,15,13
+    LTEXT           "Static",IDC_STATIC,16,135,88,26,SS_SUNKEN
+    CONTROL         "Use custom font:",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,22,71,10
+    CONTROL         "Use custom colors:",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,75,76,10
+    COMBOBOX        IDC_PFONTNAMES2,140,36,88,117,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PFONTSIZES2,140,50,28,101,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Bold",IDC_PFMTBOLD2,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_PUSHLIKE,178,50,15,13
+    CONTROL         "Italic",IDC_PFMTITALIC2,"Button",BS_AUTOCHECKBOX | 
+                    BS_ICON | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,195,50,15,
+                    13
+    CONTROL         "Underline",IDC_PFMTUNDERLINE2,"Button",BS_AUTOCHECKBOX | 
+                    BS_ICON | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,212,50,15,
+                    13
+    LTEXT           "Text pane (right pane):",IDC_STATIC,131,7,76,8
+    PUSHBUTTON      "BG",IDC_BUTTON3,158,90,15,13
+    PUSHBUTTON      "FG",IDC_BUTTON4,141,90,15,13
+    CONTROL         "Initial font:",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,22,51,10
+    CONTROL         "Use custom colors:",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,141,75,76,10
+    LTEXT           "Preview:",IDC_STATIC,7,122,29,8
+    LTEXT           "Static",IDC_STATIC,140,135,88,26,SS_SUNKEN
+    LTEXT           "Preview:",IDC_STATIC,131,122,29,8
+END
+
+IDD_HYPERLINK DIALOGEX 0, 0, 278, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Hyperlink"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TEXT,31,7,240,12,ES_AUTOHSCROLL
+    CONTROL         "&Node:",IDC_NODE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    7,48,35,10
+    PUSHBUTTON      "C&hoose",IDC_CHOOSENODE,221,44,50,14
+    CONTROL         "F&ile/Dir:",IDC_FILEDIR,"Button",BS_AUTORADIOBUTTON,7,
+                    64,41,10
+    PUSHBUTTON      "&File",IDC_CHOOSEFILE,221,61,24,14
+    PUSHBUTTON      "&Dir",IDC_CHOOSEDIR,247,61,24,14
+    CONTROL         "&E-Mail:",IDC_EMAIL,"Button",BS_AUTORADIOBUTTON,7,80,37,
+                    10
+    EDITTEXT        IDC_EMAILTEXT,50,80,221,12,ES_AUTOHSCROLL
+    CONTROL         "U&RL:",IDC_URL,"Button",BS_AUTORADIOBUTTON,7,96,31,10
+    EDITTEXT        IDC_URLTEXT,50,96,221,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Update Link",IDC_UPDATELINK,32,129,61,14
+    PUSHBUTTON      "&Clear Link",IDC_CLEARLINK,108,129,61,14
+    PUSHBUTTON      "Cance&l",IDCANCEL,184,129,61,14
+    LTEXT           """Node"", under ""Parent""",IDC_NODETEXT,51,48,75,8
+    LTEXT           "&Text:",IDC_STATIC,7,9,18,8
+    LTEXT           "C:\\path\\to\\file.txt",IDC_FILEDIRTEXT,51,64,166,8,
+                    SS_PATHELLIPSIS
+    LTEXT           "Link to:",IDC_STATIC,7,33,24,8
+END
+
+IDD_SELECTNODE DIALOGEX 0, 0, 263, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Node"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,18,249,116
+    DEFPUSHBUTTON   "OK",IDOK,149,141,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,206,141,50,14
+    LTEXT           "Select node for hyperlink destination:",IDC_STATIC,7,7,
+                    120,8
+END
+
+IDD_PREF_PORTABLE DIALOGEX 0, 0, 286, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Portable"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "&Enable Portable Mode",IDC_PMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,77,85,10
+    LTEXT           "Copy saved preferences from registry to Guide.ini, or vice versa:",
+                    IDC_STATIC,7,102,210,8
+    PUSHBUTTON      "Rgy -> Ini",IDC_RGY2INI,67,123,50,14
+    PUSHBUTTON      "Ini -> Rgy",IDC_INI2RGY,168,123,50,14
+    LTEXT           "The Guide can be configured for portable use. When in the portable mode, it saves and loads preferences from a .ini file rather than the Windows Registry. This file is called Guide.ini, present in the same directory as Guide.exe.",
+                    IDC_STATIC,7,7,272,34
+    LTEXT           "To use The Guide portably, enable portable mode below, optionally save registry settings to the ini file (Rgy -> Ini), and copy the entire installation directory to your USB drive.",
+                    IDC_STATIC,7,41,272,25
+    LTEXT           "Note: Application has to be restarted for changes to take effect.",
+                    IDC_STATIC,7,156,208,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x1fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Two-pane rich-text outliner. http://theguide.sourceforge.net/."
+            VALUE "CompanyName", "Mahadevan R"
+            VALUE "FileDescription", "The Guide"
+            VALUE "FileVersion", "2.0.0.0"
+            VALUE "InternalName", "Guide.exe"
+            VALUE "LegalCopyright", "(c) Mahadevan R 2005-08.  All rights reserved."
+            VALUE "OriginalFilename", "Guide.exe"
+            VALUE "ProductName", "The Guide"
+            VALUE "ProductVersion", "2.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_HELP_KEYBOARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_PREF_FONTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PREF_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PREF_STARTUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_SEARCH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_PREF_PRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PRINT_PREVIEW_BAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 386
+        BOTTOMMARGIN, 15
+    END
+
+    IDD_PREF_DATEFMT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_DATEFMT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_TIMEFMT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PREF_FONTANDCOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_HYPERLINK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_SELECTNODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_PREF_PORTABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NODROP              CURSOR                  "res\\nodrop.cur"
+IDC_POINTER_COPY        CURSOR                  "res\\arrowcop.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "The Guide\n\nGuide\nGuides (*.gde)\n.gde\nGuide.Document\nGuide"
+    IDC_FONTNAME            "Changes the font of the selection\nFont"
+    IDC_FONTSIZE            "Changes the font size of the selection\nFont Size"
+    IDS_CONFIRM_DELETE      "This will delete this page and any child pages irrecoverably. Are you sure you want to do this?"
+    ID_FORMAT_LINESPACING   "Changes line-spacing of paragraph\nLine Spacing"
+    IDS_PRINT_ALL           "Entire Document"
+    IDS_PRINT_ONLYSEL       "Only Selected Item"
+    IDS_PRINT_SELANDCHILDREN "Selected Item and Children"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "The Guide"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_CHILDCOUNT "000 children"
+    ID_INDICATOR_LC         "Sel: 999 lines, 99999 chars"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new Guide\nNew"
+    ID_FILE_OPEN            "Open an existing Guide\nOpen"
+    ID_FILE_CLOSE           "Close the active Guide\nClose"
+    ID_FILE_SAVE            "Save the active Guide\nSave"
+    ID_FILE_SAVE_AS         "Save the active Guide with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display print preview\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_FORMATBAR       "Show or hide the format bar\nToggle Format Bar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FORMAT_BOLD          "Make the selected text bold\nBold"
+    ID_FORMAT_ITALIC        "Emphasize the selected text\nItalics"
+    ID_FORMAT_UNDERLINE     "Underline the selected text\nUnderline"
+    ID_FORMAT_LEFTJUSTIFIED "Left-justifies paragraph\nAlign Left"
+    ID_FORMAT_CENTERJUSTIFIED "Center-justifies paragraph\nAlign Center"
+    ID_FORMAT_RIGHTJUSTIFIED "Right-justifies paragraph\nAlign Right"
+    ID_INSERT_BULLET        "Inserts a number on this line\nNumbers"
+    ID_FORMAT_BACKGROUNDCOLOUR 
+                            "Formats the selection background with a color\nBackground Color"
+    ID_FORMAT_FOREGROUNDCOLOUR 
+                            "Formats the selection foreground with a color\nForeground Color"
+    ID_FORMAT_BULLETED      "Inserts a bullet on this line\nBullets"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHAR_BOLD            "Makes the selection bold (toggle)\nBold"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHAR_ITALIC          "Makes the selection italic (toggle)\nItalic"
+    ID_CHAR_COLOR           "Formats the selection with a color\nColor"
+    ID_CHAR_UNDERLINE       "Formats the selection with a continuous underline (toggle)\nUnderline"
+    ID_PARA_LEFT            "Left-justifies paragraph\nAlign Left"
+    ID_PARA_CENTER          "Center-justifies paragraph\nCenter"
+    ID_PARA_RIGHT           "Right-justifies paragraph\nAlign Right"
+    ID_TREE_ADDCHILDPAGE    "Add a child page under the selected node\nAdd Child Page"
+    ID_TREE_RENAMEPAGE      "Rename this page\nRename Page"
+    ID_TREE_DELETEPAGE      "Delete this page and all its children\nDelete Page"
+    ID_TREE_ADDTOP          "Add a top-level page in the tree\nAdd Top-level Page"
+    ID_VIEW_USESYSTEMTRAY   "Use the system tray for minimizing\nToggle System Tray Use"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FORMAT_FONT          "Change the font for the selected text\nFont"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TREE_ADDPAGEABOVE    "Add a page above the selected node\nAdd Page Above"
+    ID_TREE_ADDPAGEBELOW    "Add a page below the selected node\nAdd Page Below"
+    ID_RMB_ADDPAGEABOVE     "Add a page above the selected node\nAdd Page Above"
+    ID_RMB_ADDPAGEBELOW     "Add a page below the selected node\nAdd Page Below"
+    ID_HELP_KEYBOARDSHORTCUTS 
+                            "Displays list of keyboard shortcuts\nDisplay Keyboard Shortcuts"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RMB_RENAME           "Rename this page\nRename Page"
+    ID_RMB_DELETE           "Delete this page and all it's children\nDelete Page"
+    ID_FORMAT_DECINDENT     "Decreases the indent level of the paragraph\nDecrease Indent"
+    ID_FORMAT_INCINDENT     "Increases the indent level of the paragraph\nIncrease Indent"
+    ID_FILE_EXPORT          "Export to various formats\nExport"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_PREFERENCES     "Change application preferences\nPreferences"
+    ID_FORMAT_STRIKETHROUGH "Strikeout the selected text\nStrikethrough"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FORMAT_HYPERLINK     "Sets or resets text as hyperlink\nHyperlink"
+    ID_TREE_SEARCH          "Search all or part of the tree\nSearch Tree"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RMB_SEARCH           "Search all or part of the tree\nSearch Tree"
+    ID_RMB_MOVEUP           "Shift this page up\nShift Page Up"
+    ID_RMB_MOVEDOWN         "Shift this page down\nShift Page Down"
+    ID_RMB_ADDTOP           "Add a top-level page in the tree\nAdd Top-level Page"
+    ID_RMB_ADDCHILD         "Add a child page under the selected node\nAdd Child Page"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TREE_MOVEUP          "Shift this page up\nShift Page Up"
+    ID_TREE_MOVEDOWN        "Shift this page down\nShift Page Down"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_PRINTSUBTREE    "Print the selected subtree\nPrint Subtree"
+    ID_FILE_PRINTPREVIEWSUBTREE 
+                            "Display print preview of selected subtree\nPrint Preview Subtree"
+    ID_FILE_EXPORTSUBTREE   "Export selected subtree to various formats\nExport Subtree"
+    ID_RMB_PRINTSUBTREE     "Print the selected subtree\nPrint Subtree"
+    ID_RMB_PRINTPREVIEWSUBTREE 
+                            "Display print preview of selected subtree\nPrint Preview Subtree"
+    ID_RMB_EXPORTSUBTREE    "Export selected subtree to various formats\nExport Subtree"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RMB_PRINT            "Print the active document\nPrint"
+    ID_RMB_PRINTPREVIEW     "Display print preview\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_FGCOL1              "Black"
+    IDC_FGCOL2              "Brown"
+    IDC_FGCOL3              "Dark Olive Green"
+    IDC_FGCOL4              "Dark Green"
+    IDC_FGCOL5              "Dark Teal"
+    IDC_FGCOL6              "Dark blue"
+    IDC_FGCOL7              "Indigo"
+    IDC_FGCOL8              "Dark grey"
+    IDC_FGCOL9              "Dark red"
+    IDC_FGCOL10             "Orange"
+    IDC_FGCOL11             "Dark yellow"
+    IDC_FGCOL12             "Green"
+    IDC_FGCOL13             "Teal"
+    IDC_FGCOL14             "Blue"
+    IDC_FGCOL15             "Blue-grey"
+    IDC_FGCOL16             "Grey - 40"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_FGCOL17             "Red"
+    IDC_FGCOL18             "Light orange"
+    IDC_FGCOL19             "Lime"
+    IDC_FGCOL20             "Sea green"
+    IDC_FGCOL21             "Aqua"
+    IDC_FGCOL22             "Light blue"
+    IDC_FGCOL23             "Violet"
+    IDC_FGCOL24             "Grey - 50"
+    IDC_FGCOL25             "Pink"
+    IDC_FGCOL26             "Gold"
+    IDC_FGCOL27             "Yellow"
+    IDC_FGCOL28             "Bright green"
+    IDC_FGCOL29             "Turquoise"
+    IDC_FGCOL30             "Skyblue"
+    IDC_FGCOL31             "Plum"
+    IDC_FGCOL32             "Light grey"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_FGCOL33             "Rose"
+    IDC_FGCOL34             "Tan"
+    IDC_FGCOL35             "Light yellow"
+    IDC_FGCOL36             "Pale green"
+    IDC_FGCOL37             "Pale turquoise"
+    IDC_FGCOL38             "Pale blue"
+    IDC_FGCOL39             "Lavender"
+    IDC_FGCOL40             "White"
+    IDS_NO_PRINTERS         "No printers installed. The Guide requires at least one printer for Print and Print Preview functions.\n\nPlease install a printer from the Control Panel and try again."
+    IDS_NOLAUNCH_URL        "Could not launch the URL:\n\n%1"
+    IDS_UNKNOWN_URLTYPE     "The Guide does not know how to launch the URL:\n\n%1"
+    IDS_FILE_WRITE_ERROR    "An error occured while writing to file: %1"
+    IDS_EXPORT_SUCCESS      "Successfully exported."
+    IDS_NODROP              "Cannot drop here."
+    IDS_NOBENEATH           "Cannot move/copy a node to beneath itself."
+    IDS_FMT_DATESYS         "&System default (""%1"")"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TREE_EXPANDALL       "Expand All Nodes\tExpand All"
+    ID_TREE_COLLAPSEALL     "Collapse All Nodes\tCollapse All"
+    ID_EDIT_INSERTDATE      "Insert today's date\nInsert Date"
+    ID_EDIT_INSERTTIME      "Insert current time\n\\Insert Time"
+    ID_RMB_COLOR            "Change node text color\nChange Node Color"
+    ID_RMB_BGCOLOR          "Change node background color\nChange Node Background Color"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_DATECUS         "&Custom (""%1"")"
+    IDS_FMT_TIMESYS         "S&ystem default (""%1"")"
+    IDS_FMT_TIMECUS         "C&ustom (""%1"")"
+    IDS_NOBACKUP            "An error occured while creating backup:\n\n%1"
+    IDS_FILELOCKED          "The file ""%1"" is being edited in another instance of The Guide."
+    IDS_FILEOPENERR         "The file ""%1"" could not be opened:\n\n%2"
+    IDS_NOBLANKFORMAT       "Format field cannot be empty."
+    IDS_NOGDE               "The file ""%1"" does not appear to be a valid Guide document."
+    IDS_NOLAUNCH_PAGE       "Could not locate any page with the title:\n\n%1"
+    IDS_NOLINKTEXT          "Please fill in the link text."
+    IDS_NONODE              "Please choose a node to link to."
+    IDS_NOFILEDIR           "Please choose a file or directory to link to."
+    IDS_NOEMAIL             "Please fill in an e-mail address."
+    IDS_NOURL               "Please fill in a valid URL."
+    IDS_NODQINEMAIL         "E-mail address cannot contain the double-quote ("") character."
+    IDS_NODQINURL           "URLs cannot contain the double-quote ("") character."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_PASTEASTEXT     "Insert Clipboard contents as text\nPaste As Text"
+    ID_RMB_NODEICON         "Change the icon for this node\tChange Node Icon"
+    ID_TREE_COLOR           "Change node text color\nChange Node Color"
+    ID_TREE_BGCOLOR         "Change node background color\nChange Node Background Color"
+    ID_TREE_NODEICON        "Change the icon for this node\tChange Node Icon"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RGY2INI_CONFIRM     "This will overwrite the settings in the Guide.ini file. Are you sure?"
+    IDS_INI2RGY_CONFIRM     "This will overwrite the settings in the registry. Are you sure?"
+    IDS_SAMPLETEXT          "Sample"
+    IDS_FMTFONT1            "%s, %dpt"
+    IDS_FMTFONT2            ", bold+italic"
+    IDS_FMTFONT3            ", bold"
+    IDS_FMTFONT4            ", italic"
+    IDS_NORICHEDIT5DLL      "Rich text DLL (msftedit.dll) could not be loaded. The Guide may not work correctly."
+    IDS_SBARFMT1            "(no text)"
+    IDS_SBARFMT2            "Lines: %d, Chars: %d"
+    IDS_SBARFMT3            "Line: %d of %d, Char: %d"
+    IDS_SBARFMT4            "Sel: %d lines, %d chars"
+    IDS_FILEEXPORT_FILT     "Rich Text Format (*.rtf)|*.rtf|All Files (*.*)|*.*||"
+    IDS_SEARCHCOL1          "#"
+    IDS_SEARCHCOL2          "Node Title"
+    IDS_SEARCHCOL3          "Text Context"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEARCH_INTITLE      "(in title)"
+    IDS_HLINK_NOTGT         "Cannot find the hyperlink target."
+    IDS_HDGFMT1             "%s Heading %d"
+    IDS_HDGFMT2             "Heading %d"
+    IDS_SELDIR              "Select directory to link to:"
+    IDS_ALLFILES_FILT       "All Files (*.*)|*.*||"
+    IDS_ICONWND_TITLE       "Icons"
+    IDS_FORMATBAR_NAME      "Formatting"
+    IDS_PREFDLG_NAME        "Preferences"
+    IDS_CHILDCOUNT_0        "(no children)"
+    IDS_CHILDCOUNT_1        "1 child"
+    IDS_CHILDCOUNT_MANY     "%d children"
+    IDS_SEARCH_FOUNDINTITLE "(in title)"
+    IDS_SEARCH_NOPAGES      "No pages in the tree."
+    IDS_SEARCH_NOSTRING     "Please enter the string to search for."
+    IDS_PAGE_NEWCHILD       "New Child Page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PAGE_NEWTOP         "New Page"
+    IDS_PAGENAME_NOEMPTY    "Please enter a title for the page."
+    IDS_DRAG_SBAR1          "before"
+    IDS_DRAG_SBAR2          "after"
+    IDS_DRAG_SBAR3          "as the first child of"
+    IDS_DRAG_SBAR4          " (and children)"
+    IDS_DRAG_SBAR5          "Move/copy"
+    IDS_DRAG_SBAR6          "Copy"
+    IDS_DRAG_SBAR7          "Move"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Guide.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolecl.rc"       // OLE container resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guide", "guide\Guide.vcproj", "{53B76919-4361-4D8D-825C-36F5192E71FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AB20D305-F3AC-4CAE-AABC-C692FED467E7} = {AB20D305-F3AC-4CAE-AABC-C692FED467E7}
+		{0511F7B7-4962-48D9-BD76-97D3ABEC592A} = {0511F7B7-4962-48D9-BD76-97D3ABEC592A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libguide", "libguide\libguide.vcproj", "{0511F7B7-4962-48D9-BD76-97D3ABEC592A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gdeutil", "gdeutil\gdeutil.vcproj", "{AB20D305-F3AC-4CAE-AABC-C692FED467E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0511F7B7-4962-48D9-BD76-97D3ABEC592A} = {0511F7B7-4962-48D9-BD76-97D3ABEC592A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{53B76919-4361-4D8D-825C-36F5192E71FB}.Debug.ActiveCfg = Debug|Win32
+		{53B76919-4361-4D8D-825C-36F5192E71FB}.Debug.Build.0 = Debug|Win32
+		{53B76919-4361-4D8D-825C-36F5192E71FB}.Release.ActiveCfg = Release|Win32
+		{53B76919-4361-4D8D-825C-36F5192E71FB}.Release.Build.0 = Release|Win32
+		{0511F7B7-4962-48D9-BD76-97D3ABEC592A}.Debug.ActiveCfg = Debug|Win32
+		{0511F7B7-4962-48D9-BD76-97D3ABEC592A}.Debug.Build.0 = Debug|Win32
+		{0511F7B7-4962-48D9-BD76-97D3ABEC592A}.Release.ActiveCfg = Release|Win32
+		{0511F7B7-4962-48D9-BD76-97D3ABEC592A}.Release.Build.0 = Release|Win32
+		{AB20D305-F3AC-4CAE-AABC-C692FED467E7}.Debug.ActiveCfg = Debug|Win32
+		{AB20D305-F3AC-4CAE-AABC-C692FED467E7}.Debug.Build.0 = Debug|Win32
+		{AB20D305-F3AC-4CAE-AABC-C692FED467E7}.Release.ActiveCfg = Release|Win32
+		{AB20D305-F3AC-4CAE-AABC-C692FED467E7}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
